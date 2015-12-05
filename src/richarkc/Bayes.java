@@ -125,9 +125,16 @@ public class Bayes {
 	}
 
 	public static void main(String[] args) {
-		Bayes test = new Bayes(new File("src/data3.txt"));
+		Bayes data0 = new Bayes(new File("src/data0.txt"));
+		Bayes data1 = new Bayes(new File("src/data1.txt"));
+		Bayes data2 = new Bayes(new File("src/data2.txt"));
+		Bayes data3 = new Bayes(new File("src/data3.txt"));
 		try {
-			System.out.println(test.classifyData());
+			System.out.println("data0.txt performance: " + data0.classifyData());
+			System.out.println("data1.txt performance: " + data1.classifyData());
+			System.out.println("data2.txt performance: " + data2.classifyData());
+			System.out.println("data3.txt performance: " + data3.classifyData());
+			
 		} catch (FileNotFoundException e) {
 
 		}
